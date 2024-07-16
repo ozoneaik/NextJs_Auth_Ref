@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextJs_Auth_Ref
 
-## Getting Started
+## คำอธิบาย
 
-First, run the development server:
+โปรเจกต์ **nextJs_Auth_Ref** นี้เป็นตัวอย่างการสร้างระบบล็อกอินในแอปพลิเคชัน Next.js โดยใช้ NextAuth ซึ่งแสดงให้เห็นถึงการใช้งานที่ดีที่สุดในการรวมการเข้าสู่ระบบ การลงทะเบียน และการจัดการเซสชันของผู้ใช้ เหมาะสำหรับนักพัฒนาเว็บที่ต้องการเข้าใจและนำการตรวจสอบสิทธิ์ที่ปลอดภัยมาใช้ในโปรเจกต์ Next.js ของตน
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## การติดตั้ง
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone โปรเจกต์นี้:
+    ```bash
+    git clone https://github.com/yourusername/nextJs_Auth_Ref.git
+    ```
+2. ไปที่ไดเรกทอรีของโปรเจกต์:
+    ```bash
+    cd nextJs_Auth_Ref
+    ```
+3. ติดตั้ง dependencies:
+    ```bash
+    npm install
+    ```
+4. สร้างไฟล์ `.env` สามารถคัดลองได้จาก `.env.example` ซึ่งมีค่าดังต่อไปนี้:
+    ```env
+    DATABASE_URL="XXX"
+    NEXTAUTH_SECRET=XXX
+    NEXTAUTH_URL=XXX
+    GOOGLE_CLIENT_ID=XXX
+    GOOGLE_CLIENT_SECRET=XXX
+    ```
 
-You can start editing the page by modifying `app/page.jsx`. The page auto-updates as you edit the file.
+## การใช้งาน
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. รันโปรเจกต์:
+    ```bash
+    npm run dev
+    ```
+2. เปิดเบราว์เซอร์และไปที่ [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## การใช้งานเพิ่มเติม
 
-To learn more about Next.js, take a look at the following resources:
+สำหรับการตั้งค่าหรือการปรับแต่งเพิ่มเติม คุณสามารถดูที่ [NextAuth.js documentation](https://next-auth.js.org/getting-started/introduction)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## การสนับสนุน
+หากมีคำถามหรือปัญหาใด ๆ สามารถสร้าง issue ใน repository นี้หรือส่งอีเมลมาที่ [aofphuwadech@gmail.com](mailto:aofphuwadech@gmail.com)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## อ้างอิงจาก
+- [mikelopster](https://mikelopster.dev)
+  - [รู้จักกับ Next Auth + Prisma](https://mikelopster.dev/posts/next-auth-basic)
+  - [รู้จักกับ Prisma ORM](https://mikelopster.dev/posts/next-prisma/)
 
-## Deploy on Vercel
+## ผู้คัดลอก
+- [ozoneaik](https://github.com/ozoneaik)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+โปรเจกต์นี้อยู่ภายใต้ลิขสิทธิ์ [MIT License](LICENSE)
